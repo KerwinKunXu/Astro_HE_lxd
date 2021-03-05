@@ -1,0 +1,37 @@
+利用吸积率的变化解释NGC5907ULX的自转周期变化
+
+idea1:假设处于equilibrium，但transfer rate随时间变化，P正比于Mdot^(-3/7), 则因Mdot随时间减小，P应该增大，不能解释。所以应该处于吸积态。
+
+该源的信息：
+spin period：      1.427578  1.137403  1.137316  1.136042
+pdot(10^-9)        -9.6      -5.2      -5.0      -4.7
+observation time   52690.9   56848.0   56848.2   56851.5
+		   2003.2.28 2014.7.9  2014.7.9  2014.7.12
+ref: Table 1 of arXiv:1609.07375
+distance	17.1Mpc
+p_orb(~)	5.3d	!not confirmed
+maximum X-ray luminoisity >10^41 erg/s
+
+由P，Pdot利用力矩公式退出Mdot-B的关系，取一个B值，得到对应四次观测的Mdot，利用线性拟合，假设Mdot变化遵循关系Mdot=Mdot0*(t/t0)^-alpha, t>t0，得到Mdot的变化规律
+
+alpha应该先被指定，其可以取三个值，-4/3，-8/7，-19/14，或者参考Tong的文章，可以去-1.25.
+因为光度较高，吸积率应该也很大，盘可能处于最开始的吸积阶段。
+mathematica 拟合结果是alpha可以取-8/7，
+
+若想要得到因为吸积而使周期减小的结果，需要Mdot随时间变大，这似乎不符合吸积盘物理。
+所以需要其他的idea。
+
+case1:
+取Mdot为常数，6d19，
+
+
+case2:
+tf（参考时间）取1d6 d，
+Mdot0*t0^(4/3)~7*10^27;
+so we get 
+Mdot=Mdot0*t0^(4/3)*(t+tf)^(-4/3)
+=7*10^27*(t+10^6)^(-4/3)
+
+注意：t的单位同MJD，为天。
+！！！所以可以考虑把中间两个点作为一个点来处理。
+
