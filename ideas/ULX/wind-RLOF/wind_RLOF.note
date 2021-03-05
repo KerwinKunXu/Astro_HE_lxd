@@ -1,0 +1,11 @@
+
+ref: El Mellah + 2019, aa, 622, L3
+(1) fig~2 是怎么画的？
+wind-RLOF model是只能网格化模拟得到还是跟BHL model一样有一套公式？
+怎么将wind-RLOF model写入code，如果只是网格化结果，可以将fig~2的网格结果写入code.
+(2) luminosity
+mu=Mdot/Mdot_*
+Mdot_* is the mass loss of the companion,
+Mdot is the mass transfer rate to the accretor,
+the accretion rate of the accretor Mdot_acc can be estimated from Mdot, 
+then the X-ray luminosity can be got.
